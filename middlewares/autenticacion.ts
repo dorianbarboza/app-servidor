@@ -1,6 +1,6 @@
 import { Response, Request, NextFunction } from 'express';
 import Token from '../classes/token';
- 
+
 
 export const verificaToken = ( req: any, res: Response, next: NextFunction  ) => {
 
@@ -16,7 +16,7 @@ export const verificaToken = ( req: any, res: Response, next: NextFunction  ) =>
 
             res.json({
                 ok: false,
-                mensaje: 'Token no es correcto'
+                mensaje: 'ERROR: Token no es correcto'
             });
 
         });
@@ -25,5 +25,3 @@ export const verificaToken = ( req: any, res: Response, next: NextFunction  ) =>
 
 
 }
-
-

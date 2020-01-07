@@ -15,7 +15,7 @@ exports.verificaToken = (req, res, next) => {
         .catch(err => {
         res.json({
             ok: false,
-            mensaje: 'Token no es correcto'
+            mensaje: 'ERROR: Token no es correcto'
         });
     });
 };
